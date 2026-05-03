@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alex Khan — AI & Web Developer Portfolio</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- 3D ANIMATED BACKGROUND CANVAS -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">&lt;Moiz/&gt;<span>Hussain</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-content glass">
+    <p class="greeting">👋 Hello, I'm</p>
+    <h1 class="name">Moiz Hussain</h1>
+    <h2 class="role">
+      <span class="typed"></span><span class="cursor-blink">|</span>
+    </h2>
+    <p class="tagline">Crafting intelligent web experiences with <span>AI</span> & <span>3D</span> magic ✨</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-secondary">Hire Me</a>
+    </div>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <span></span> Scroll Down
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+  <div class="about-grid">
+    <div class="about-img glass">
+      <div class="img-wrap">
+        <img src="https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_sMJVJhLqeMEyk0e6bNb9p/388a07ce-7663-4743-a213-9577d1ea2ca5.png" alt="Alex"/>
+      </div>
+    </div>
+    <div class="about-text glass">
+      <h3>AI Engineer & Full-Stack Developer</h3>
+      <p>I'm a passionate developer who blends <b>Artificial Intelligence</b> with <b>modern web technologies</b> to build futuristic digital products. With 5+ years of experience, I've delivered 50+ projects worldwide.</p>
+      <div class="stats">
+        <div class="stat"><h4>50+</h4><p>Projects</p></div>
+        <div class="stat"><h4>30+</h4><p>Clients</p></div>
+        <div class="stat"><h4>5+</h4><p>Years Exp</p></div>
+        <div class="stat"><h4>15+</h4><p>AI Models</p></div>
+      </div>
+      <a href="#" class="btn-primary">Download CV <i class="fas fa-download"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills">
+  <h2 class="section-title">My <span>Skills</span></h2>
+  <div class="skills-grid">
+    <div class="skill-card glass"><i class="fab fa-react"></i><h4>React</h4><p>95%</p><div class="bar"><span style="width:95%"></span></div></div>
+    <div class="skill-card glass"><i class="fab fa-node-js"></i><h4>Node.js</h4><p>90%</p><div class="bar"><span style="width:90%"></span></div></div>
+    <div class="skill-card glass"><i class="fab fa-python"></i><h4>Python / AI</h4><p>92%</p><div class="bar"><span style="width:92%"></span></div></div>
+    <div class="skill-card glass"><i class="fas fa-brain"></i><h4>Machine Learning</h4><p>88%</p><div class="bar"><span style="width:88%"></span></div></div>
+    <div class="skill-card glass"><i class="fas fa-cube"></i><h4>Three.js / 3D</h4><p>85%</p><div class="bar"><span style="width:85%"></span></div></div>
+    <div class="skill-card glass"><i class="fab fa-aws"></i><h4>Cloud / DevOps</h4><p>80%</p><div class="bar"><span style="width:80%"></span></div></div>
+    <div class="skill-card glass"><i class="fas fa-robot"></i><h4>LLM / GPT</h4><p>93%</p><div class="bar"><span style="width:93%"></span></div></div>
+    <div class="skill-card glass"><i class="fab fa-figma"></i><h4>UI/UX Design</h4><p>82%</p><div class="bar"><span style="width:82%"></span></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+  <h2 class="section-title">Featured <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#7b2ff7,#f107a3)"></div>
+      <div class="project-info">
+        <h3>AI Chatbot SaaS</h3>
+        <p>Multi-tenant chatbot platform using GPT-4 + RAG.</p>
+        <div class="tags"><span>Next.js</span><span>OpenAI</span><span>Postgres</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#00c9ff,#92fe9d)"></div>
+      <div class="project-info">
+        <h3>3D Product Configurator</h3>
+        <p>Interactive 3D shoe customizer with WebGL.</p>
+        <div class="tags"><span>Three.js</span><span>React</span><span>GLSL</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#fc466b,#3f5efb)"></div>
+      <div class="project-info">
+        <h3>AI Image Generator</h3>
+        <p>Text-to-image SaaS using Stable Diffusion.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>SD</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#f7971e,#ffd200)"></div>
+      <div class="project-info">
+        <h3>Social Media Auto-Pilot</h3>
+        <p>Auto content + posting across IG, LinkedIn, X.</p>
+        <div class="tags"><span>n8n</span><span>GPT-4</span><span>Node</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#11998e,#38ef7d)"></div>
+      <div class="project-info">
+        <h3>Voice AI Assistant</h3>
+        <p>Real-time voice agent with ElevenLabs + Whisper.</p>
+        <div class="tags"><span>WebRTC</span><span>Whisper</span><span>TTS</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project-card glass">
+      <div class="project-img" style="background:linear-gradient(135deg,#cc2b5e,#753a88)"></div>
+      <div class="project-info">
+        <h3>Crypto Analytics Dashboard</h3>
+        <p>Real-time charts + AI predictions.</p>
+        <div class="tags"><span>D3.js</span><span>Web3</span><span>ML</span></div>
+        <a href="#">View Project <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Get In <span>Touch</span></h2>
+  <div class="contact-wrap glass">
+    <div class="contact-info">
+      <h3>Let's build something amazing 🚀</h3>
+      <p><i class="fas fa-envelope"></i> alex@portfolio.dev</p>
+      <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <input type="text" placeholder="Subject"/>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Alex Khan. Crafted with ❤️ + AI</p>
+</footer>
+
+<!-- THREE.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
